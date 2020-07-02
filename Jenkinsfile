@@ -20,7 +20,7 @@ pipeline {
         stage('Docker-Login') { 
             steps {
                 echo 'Hello Guys!! Tghis step will login to docker hub'
-                sh label: '', script: 'docker login -u ravikirantht -p aws123'
+                sh label: '', script: 'docker login -u ravikirantht -p aws123456'
             }
         }
         stage('Push Docker Image') { 
