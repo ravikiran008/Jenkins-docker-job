@@ -1,7 +1,9 @@
 // This pipeline is used to build a docker image and push the image to the Dockerhub
 
 pipeline {
-    agent any 
+    agent {
+  label 'jenkins-slave-1'
+}
     stages {
         stage('CheckOut-Git') { 
             steps {
