@@ -1,8 +1,8 @@
-# Jenkinsfile (Declarative Pipeline)
-# Declerative pipeline starts with "pipeline"
-# agent : Where you want to run you job ex: slave nodes
-# stages : Build, Test, Deploy.
-# steps : What are the commands to execute with in stage    
+// # Jenkinsfile (Declarative Pipeline)
+// # Declerative pipeline starts with "pipeline"
+// # agent : Where you want to run you job ex: slave nodes
+// # stages : Build, Test, Deploy.
+// # steps : What are the commands to execute with in stage    
 
 pipeline {
     agent any 
