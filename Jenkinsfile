@@ -12,7 +12,7 @@ pipeline {
         stage('Build-Docker-Image') { 
             steps {
                 echo 'Hello Guys!! This Stage Builds the Docker Image'
-                sh label: '', script: 'docker build -t  ravikirantht/jenkins-image:$BUILD_NUMBER'
+                sh label: '', script: 'docker build -t  ravikirantht/jenkins-image:$BUILD_NUMBER .'
             }
         }
         stage('Docker-Login') { 
