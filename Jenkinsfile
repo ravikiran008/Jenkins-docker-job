@@ -24,6 +24,7 @@ pipeline {
         stage('Push Docker Image') { 
             steps {
                 echo 'Hello Guys!! This Job will push the Docker Image to Docker hub'
+                sh label: '', script: 'docker push ravikirantht/jenkins-image:$BUILD_NUMBER'
             }
         }
         }
